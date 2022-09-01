@@ -81,7 +81,6 @@ print(pipeline)
 Create and fit RandomForest classifier
 """
 from everywhereml.sklearn.ensemble import RandomForestClassifier
-
 clf = RandomForestClassifier(n_estimators=8, max_depth=40)
 
 # fit on train split and get accuracy on the test split
