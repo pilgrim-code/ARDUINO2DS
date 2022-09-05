@@ -1,7 +1,7 @@
 from everywhereml.data import ImageDataset
 from everywhereml.data.collect import MjpegCollector
 
-base_folder = 'boards_over_http'
+base_folder = 'IMG_COLLECTED'
 
 try:
     # if our dataset folder already exists, load it
@@ -95,7 +95,7 @@ clf.fit(feature_dataset)
 print("COPIA EL MODELO DESDE ACA:   ")
 
 print(clf.to_arduino_file(
-    filename='path-to-sketch/HogClassifier.h',
+    filename='Modelo/HogClassifier.h',
     instance_name='classifier', 
     class_map=feature_dataset.class_map
 ))
